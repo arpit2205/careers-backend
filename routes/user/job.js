@@ -5,7 +5,7 @@ const Job = require("../../models/Job");
 const verifyToken = require("../middleware/verifyToken");
 
 // Get all jobs
-router.get("/all-jobs", verifyToken, async (req, res) => {
+router.get("/all-jobs", async (req, res) => {
   try {
     const jobs = await Job.find();
 
@@ -16,7 +16,7 @@ router.get("/all-jobs", verifyToken, async (req, res) => {
 });
 
 // Get single job
-router.get("/:id", verifyToken, async (req, res) => {
+router.get("/:id", async (req, res) => {
   const { id } = req.params;
 
   try {
