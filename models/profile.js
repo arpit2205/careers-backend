@@ -80,6 +80,11 @@ const profileSchema = new mongoose.Schema(
         required: true,
       },
     },
+
+    linkedinURL: {
+      type: String,
+      required: true,
+    },
   },
   {
     collection: "profiles",

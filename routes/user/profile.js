@@ -6,7 +6,7 @@ const verifyToken = require("../middleware/verifyToken");
 
 //post profile
 router.post("/", verifyToken, async (req, res) => {
-  const { user, name, education, skills, experience } = req.body;
+  const { user, name, education, skills, experience, linkedinURL } = req.body;
 
   //validate
   if (
@@ -19,7 +19,8 @@ router.post("/", verifyToken, async (req, res) => {
     !education.field ||
     !education.yearOfGraduation ||
     !skills ||
-    !experience
+    !experience ||
+    !linkedinURL
   ) {
     return res
       .status(400)
@@ -43,6 +44,7 @@ router.post("/", verifyToken, async (req, res) => {
     },
     skills,
     experience,
+    linkedinURL: linkedinURL,
   };
 
   // Check if profile for this user already exists
