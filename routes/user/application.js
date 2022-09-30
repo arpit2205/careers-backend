@@ -23,6 +23,8 @@ router.post("/apply", verifyToken, async (req, res) => {
     },
     job: {
       id: job.id,
+      role: job.role,
+      location: job.location,
     },
     profile,
     status: "applied",
