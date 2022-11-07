@@ -104,4 +104,26 @@ router.patch("/:applicationId", verifyToken, verifyAdmin, async (req, res) => {
   }
 });
 
+// get single application
+router.get("/:applicationId", verifyToken, verifyAdmin, async (req, res) => {
+  const { applicationId: id } = req.params;
+
+  // check if application exists
+  try {
+    const application = await Application.findById(id);
+    if (!application) {
+      return res.status(400).json({
+        status: "error",
+        message: "Application not found",
+      });
+    }
+
+    return res.status(200).json({ status: "success", data: application });
+  } catch (error) {
+    return res
+      .status(400)
+      .json({ status: "error", message: "Application not found" });
+  }
+});
+
 module.exports = router;
