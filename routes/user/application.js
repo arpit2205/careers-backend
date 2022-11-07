@@ -3,7 +3,7 @@ const router = express.Router();
 
 const verifyToken = require("../middleware/verifyToken");
 const Application = require("../../models/Application");
-const Job = require("../../models/Job");
+const Job = require("../../models/job");
 
 // Create an application
 router.post("/apply", verifyToken, async (req, res) => {
