@@ -7,5 +7,5 @@ It lets admins and users to
 
 ## API Documentation
 
-### Postman Collection
-https://go.postman.co/workspace/My-Workspace~96e60b1f-af27-48fa-8d64-59439ce03d3a/collection/14099122-cd2b5511-0deb-4704-81c5-db14afe7b764
+### Postman Collection (API Documentation)
+https://web.postman.co/workspace/My-Workspace~96e60b1f-af27-48fa-8d64-59439ce03d3a/documentation/14099122-cd2b5511-0deb-4704-81c5-db14afe7b764
