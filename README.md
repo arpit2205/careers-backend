@@ -5,6 +5,8 @@ It lets admins and users to
 - post and apply for jobs respectively
 - view job applications, application status, logs and more
 
+Deployed at: https://proud-red-kit.cyclic.app/
+
 ## API Documentation
 
 ### Postman Collection (API Documentation)
