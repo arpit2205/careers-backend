@@ -4,6 +4,7 @@ It lets admins and users to
 - signup/login securely via JWT Authentication
 - post and apply for jobs respectively
 - view job applications, application status, logs and more
+- send automatic emails for application status updates
 
 Deployed at: https://proud-red-kit.cyclic.app/
 
